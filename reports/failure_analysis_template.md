@@ -1,54 +1,44 @@
-# 失败案例分析模板
+# 失败案例模板
 
-这个模板是留给我自己每轮实验后做复盘用的，重点不是把结果写得好看，而是把问题分清楚。
-
-## 实验设置
+## 这轮配置
 
 - 数据集：
 - 检索器：
 - 生成器：
 - Top-k：
-- Prompt 策略：
 
-## 指标结果
+## 指标
 
-- Retrieval hit@k：
-- Answer EM：
-- Answer F1：
+- hit@k：
+- EM：
+- F1：
 
-## 这轮主要错误类型
+## 错误
 
-- `retrieval_miss`：正确来源文档没有被检索到
-- `generation_failure`：正确文档已经检索到，但回答还是错了
-- `partial_answer`：答案只覆盖了一部分信息
-- `missing_step`：答案漏掉了关键步骤
-- `option_confusion`：把参数或选项用法混淆了
-- `tool_confusion`：把相似工具或命令混淆了
+- `retrieval_miss`
+- `generation_failure`
+- `partial_answer`
+- `missing_step`
+- `option_confusion`
+- `tool_confusion`
 
-## 代表性案例
+## 案例
 
-### 案例 1
-
-- 问题：
-- 标准答案：
-- 模型答案：
-- 检索文档：
-- 我现在判断的原因：
-- 下一步怎么改：
-
-### 案例 2
+### 1
 
 - 问题：
 - 标准答案：
 - 模型答案：
 - 检索文档：
-- 我现在判断的原因：
-- 下一步怎么改：
+- 原因：
+- 下一步：
 
-## 下一轮准备做什么
+### 2
 
-- 加入稠密检索或 reranker
-- 调整 chunk 切分策略
-- 改 prompt 里的引用约束
-- 对比多个生成器在同一 benchmark 上的表现
+- 问题：
+- 标准答案：
+- 模型答案：
+- 检索文档：
+- 原因：
+- 下一步：
 
