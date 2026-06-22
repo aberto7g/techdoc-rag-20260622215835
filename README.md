@@ -76,10 +76,4 @@ python -m unittest discover -s tests
 }
 ```
 
-## 后面准备做的事
-
-1. 继续扩 Git / Linux 相关样本
-2. 加稠密检索或者混合检索
-3. 接一个带引用的生成模块
-4. 把错误分类再细一点
 
